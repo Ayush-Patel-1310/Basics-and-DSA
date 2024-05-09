@@ -21,7 +21,7 @@ Same datatype are to be stored in array unlike list different datatype elements 
 
 # List
 
-Lists are used to store multiple items in a single variable.
+A collection of elements with the flexibility to handle different data types. Lists are dynamic, meaning their size can change during the execution of a program.
 
 | 1 | 2 | "ayush" |
 | :---- | :--- | :--- |
@@ -39,3 +39,7 @@ List's element can be accessed by index. It supports indexing as array.
 | static | Non static |
 | Fixed size | Not fix size |
 | Same datatype of every element | Different datatypes are allowed |
+| Common in languages like C/C++. | Common in languages like python and java. |
+
+
+Lists are a versatile data structure.
