@@ -41,6 +41,21 @@ printPattern(n)
 
 ```10 5 0 5 10```
 
+## Fibonacci series using recursion
+
+```
+def recur_fibo(n):
+   # Base Case
+   if n <= 1:
+       return n
+   else:
+   # Recursive Case
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+ 
+# Driver Code
+num = 10
+print (recur_fibo(num))
+```
 
 
 
