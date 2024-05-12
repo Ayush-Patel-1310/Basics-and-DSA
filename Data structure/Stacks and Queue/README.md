@@ -39,6 +39,66 @@ So far, we learned about the Linear Queue. The other two queues are:
 
 * ```Priority Queue```: In priority queues, elements are sorted based on priority. The most important element appears first, and the least important appears last. It is also used in load balancing in operating system.
 
+Implementation of Queue:-
+```
+
+class queue:
+    def  __iter__(self):
+        self.c = 0
+        return self
+    def __next__(self):
+        if self.c<self.r:
+            t = self.x
+            self.c=self.c+1
+            return t
+        raise StopIteration()
+
+    def __init__(self,x):
+        self.n = x
+        self.x=[0]*x
+        self.f = 0
+        self.r = 0
+    def remove(self):
+        if self.isempty():
+            print("Khali hai ree")
+            return
+        self.x[self.f] = 0
+        for i in range(self.r):
+            self.x[i] = self.x[i+1]
+        self.x[self.r] = 0
+        self.r = self.r-1
+    def isempty(self):
+        return self.f==self.r
+
+    def insert(self,data):
+        if self.isfull():
+            print("Full hai ree baba")
+            return
+        self.x[self.r] = data
+        self.r = self.r+1
+    def isfull(self):
+        return self.r==self.n
+    def disp(self):
+        if self.isempty():
+            print("Khali hai ree")
+            return
+        for i in self:
+            print(i,end=" ")
+    def __repr__(self):
+        for i in self:
+            print(i,end=" ")
+        return ""
+
+q = queue(5)
+q.insert(100)
+q.insert(6)
+q.insert(5)
+q.insert(90)
+q.remove()
+q.remove()
+print(q)
+```
+
 #### Pros
 
  + Queues are flexible.
