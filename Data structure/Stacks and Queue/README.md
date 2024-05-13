@@ -118,5 +118,11 @@ print(q)
  + ```top()```: returns the first element in the queue
  + ```initialize()```: creates an empty queue
 
+#### There are 4types of queue
+
+ + Simple Queue or Linear Queue
+ + Circular Queue
+ + Priority Queue
+ + Double Ended Queue (or Deque)
 
 
